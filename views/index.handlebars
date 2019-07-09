@@ -1,0 +1,38 @@
+<h1>Celebrities</h1>
+
+<h2>Celebrities that aren't exiled!</h2>
+
+<ul>
+  {{#each celebrities}}
+    {{#unless exiled}}
+      {{> celebrities/celebrity-block exile=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Exiled Celebrities</h2>
+
+<ul>
+  {{#each celebrities}}
+    {{#if exiled}}
+      {{> celebrities/celebrity-block exile=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Celebrity</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Celebrity Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="exiled">Exiled?</label><br>
+    <input type="radio" name="exiled" value="1" checked> Exiled!<br>
+    <input type="radio" name="exiled" value="0"> Not Exiled
+  </div>
+
+  <button type="submit">Add Celebrity</button>
+</form>
