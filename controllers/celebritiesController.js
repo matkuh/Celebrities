@@ -2,6 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
+
 var celebrity = require("../models/celebrity.js");
 
 router.get("/", function (req, res) {
@@ -16,9 +17,9 @@ router.get("/", function (req, res) {
 
 router.post("/api/celebrities", function (req, res) {
   celebrity.create([
-    "name", "exiled"
+    "celebrity_name", "exiled"
   ], [
-      req.body.name, req.body.exiled
+      req.body.celebrity_name, req.body.exiled
     ], function (result) {
 
       res.json({ id: result.insertId });
@@ -34,7 +35,6 @@ router.put("/api/celebrities/:id", function (req, res) {
     exiled: req.body.exiled
   }, condition, function (result) {
     if (result.changedRows == 0) {
-  
       return res.status(404).end();
     } else {
       res.status(200).end();
@@ -52,5 +52,6 @@ router.delete("/api/celebrities/:id", function (req, res) {
     }
   })
 })
+
 
 module.exports = router;

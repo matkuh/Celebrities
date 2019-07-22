@@ -1,3 +1,5 @@
+### Schema
+DROP DATABASE IF EXISTS celebrity_db
 CREATE DATABASE celebrity_db;
 USE celebrity_db;
 

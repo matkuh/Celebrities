@@ -1,6 +1,8 @@
 <li>
-	{{name}}
+	{{celebrity_name}}
+
 	<button class="change-exile" data-id="{{id}}" data-newexile="{{exile}}">
-		{{#if exile}}Exile{{else}}UnExile{{/if}}
+		{{#if exile}}Exile!{{else}}UnExile!{{/if}}
 	</button>
+	<button class="delete" data-id="{{id}}">Delete</button>
 </li>

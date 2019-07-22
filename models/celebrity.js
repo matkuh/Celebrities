@@ -6,7 +6,6 @@ var celebrity = {
       cb(res);
     });
   },
-
   create: function(cols, vals, cb) {
     orm.create("celebrities", cols, vals, function(res) {
       cb(res);
@@ -16,8 +15,12 @@ var celebrity = {
     orm.update("celebrities", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  delete: function(condition, cb) {
+    orm.delete("celebrities", condition, function(res) {
+      cb(res);
+    });
   }
- 
 };
 
 module.exports = celebrity;
