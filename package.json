@@ -7,19 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matkuh/Celebrities"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql": "^2.16.0",
     "nodemon": "^1.19.1"
-  },
-  "devDependencies": {
-    "handlebars-helper-css": "^0.1.0"
-  },
-  "engines": {
-    "node": "10.16.0",
-    "npm": "6.9.0"
   }
+
 }
