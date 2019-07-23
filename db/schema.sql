@@ -10,3 +10,4 @@ CREATE TABLE celebrities
 	exiled BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+    
