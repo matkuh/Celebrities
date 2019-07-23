@@ -4,3 +4,4 @@ INSERT INTO celebrities (celebrity_name) VALUES ('Jussie Smolett');
 INSERT INTO celebrities (celebrity_name, exiled) VALUES ('Chris Brown', true);
 INSERT INTO celebrities (celebrity_name, exiled) VALUES ('Matt Kuh', true);
 
+   
