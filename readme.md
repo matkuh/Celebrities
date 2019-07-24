@@ -1,6 +1,6 @@
 # Celebrities
 
-<img src="assets/images/celebrityss.png" width=600 height=700>
+<img src="celebrityss.png" width=600 height=700>
 
 ### I made a Celebrity app with MySql and sequelize.  This app allows you to add celebrities and gives your the option to exile and unexile them :)
 
